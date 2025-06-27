@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Máquina de Doces</title>
+  <link rel="stylesheet" href="doces.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-doces">
+  <div id="abrir-maquina">
+    <img src="../images/vending-machine.png" alt="Abrir Máquina" />
+  </div>
+
+  <div class="container" id="maquina-container">
+    <div class="interface-layout">
+      <div class="interface-main">
+        <button id="fechar-maquina" title="Fechar">✖</button>
+        <div class="hud-box">
+          <h1>Máquina de Doces</h1>
+          <div id="estado">Valor: R$0,00</div>
+        </div>
+        <div class="hud-box">
+          <div class="section">
+            <h2>Inserir Nota</h2>
+            <div class="recharge-buttons">
+              <button class="nota" data-valor="1">R$1,00</button>
+              <button class="nota" data-valor="2">R$2,00</button>
+              <button class="nota" data-valor="5">R$5,00</button>
+            </div>
+          </div>
+        </div>
+        <div class="hud-box">
+          <div class="section">
+            <h2>Escolher Doce</h2>
+            <div class="candy-buttons">
+              <button class="doce" data-doce="A" disabled>Caramelo (R$6,00)</button>
+              <button class="doce" data-doce="B" disabled>Bombom (R$7,00)</button>
+              <button class="doce" data-doce="C" disabled>Barra Chocolate (R$8,00)</button>
+            </div>
+          </div>
+        </div>
+        <div id="mensagem">Insira uma nota</div>
+        <div id="saida-doce"></div>
+        <button class="voltar" onclick="location.href='../index.html'">Voltar ao Menu</button>
+      </div>
+      <div class="interface-panel">
+        <div id="coin-slot"></div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="som-moeda" src="../audio/coin.mp3" preload="auto"></audio>
+  <script src="doces.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Principal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+      background-color: #f0e4d4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #menu-principal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    h1 {
+      color: #7b1a0c;
+      text-shadow: 1px 1px #fff;
+    }
+    .menu-botoes button {
+      padding: 14px 28px;
+      font-family: 'Press Start 2P', monospace;
+      background-color: #ff6d00;
+      color: #fff;
+      border: 3px solid #000;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .menu-botoes button:hover {
+      background-color: #ff8c1a;
+      transform: scale(1.05);
+    }
+    .menu-botoes {
+      display: flex;
+      gap: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu-principal">
+    <h1>Escolha um Modo</h1>
+    <div class="menu-botoes">
+      <button onclick="location.href='doces/doces.html'">Máquina de Doces</button>
+      <button onclick="location.href='elevador/elevador.html'">     Elevador    </button>
+    </div>
+  </div>
+</body>
+</html>
